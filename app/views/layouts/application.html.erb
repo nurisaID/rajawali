@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rajawali</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="menu">
+	<%= link_to "Home", home_path%>
+	<%= link_to "Who I am", who_iam_path%>
+	<%= link_to "Product", product_path%>
+	<%= link_to "Client", client_path%>
+	<%= link_to "Career", career_path%>
+	<%= link_to "Contact", contact_path%>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
